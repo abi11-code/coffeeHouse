@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bean | Coffee House</title>
+  <meta name="description" content="Freshly roasted coffee, warm pastries and a cozy place to unwind." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">☕ Brew<span>&</span>Bean</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-small nav-cta">Reserve a Table</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">Freshly roasted every morning</p>
+      <h1>Where every cup<br />tells a <em>story</em></h1>
+      <p class="hero-text">
+        Hand-crafted coffee, warm pastries and a cozy corner to slow down.
+        Come in for a cup, stay for the company.
+      </p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn">View Menu</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <span class="big">4.9★</span>
+      <span>Loved by 2,000+ coffee lovers</span>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="features">
+    <div class="feature reveal"><span>🌱</span><h3>Ethically Sourced</h3><p>Beans from small farms we know by name.</p></div>
+    <div class="feature reveal"><span>🔥</span><h3>Roasted Fresh</h3><p>Small batches, roasted in-house daily.</p></div>
+    <div class="feature reveal"><span>🥐</span><h3>Baked Daily</h3><p>Pastries and bread out of the oven by 7 AM.</p></div>
+    <div class="feature reveal"><span>📶</span><h3>Cozy & Free Wi-Fi</h3><p>A calm spot to work, read or catch up.</p></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="about-image reveal">
+      <div class="about-card">
+        <span class="emoji">☕</span>
+        <p>Since 2015</p>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow dark">About us</p>
+      <h2>A little corner of calm in a busy day</h2>
+      <p>
+        Brew &amp; Bean started with a simple idea: great coffee should feel
+        personal. We roast in small batches, pour with care, and treat every guest
+        like a regular.
+      </p>
+      <p>
+        Whether you need a quick espresso on the go or a long afternoon with a book,
+        there is always a seat and a warm cup waiting for you.
+      </p>
+      <ul class="stats">
+        <li><strong>12+</strong><span>Signature drinks</span></li>
+        <li><strong>8</strong><span>Origin countries</span></li>
+        <li><strong>10k+</strong><span>Cups a month</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu section" id="menu">
+    <div class="section-head reveal">
+      <p class="eyebrow dark">Our menu</p>
+      <h2>Made fresh, served warm</h2>
+    </div>
+
+    <div class="tabs reveal" id="menuTabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="coffee">Coffee</button>
+      <button class="tab" data-filter="cold">Cold Drinks</button>
+      <button class="tab" data-filter="bites">Bites</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <article class="menu-item" data-category="coffee">
+        <div class="menu-icon">☕</div>
+        <div><h3>Espresso</h3><p>Rich, bold and perfectly pulled.</p></div>
+        <span class="price">$2.50</span>
+      </article>
+      <article class="menu-item" data-category="coffee">
+        <div class="menu-icon">🥛</div>
+        <div><h3>Cappuccino</h3><p>Espresso with velvety steamed milk foam.</p></div>
+        <span class="price">$3.80</span>
+      </article>
+      <article class="menu-item" data-category="coffee">
+        <div class="menu-icon">🍯</div>
+        <div><h3>Honey Latte</h3><p>Smooth latte lightly sweetened with honey.</p></div>
+        <span class="price">$4.20</span>
+      </article>
+      <article class="menu-item" data-category="coffee">
+        <div class="menu-icon">🍫</div>
+        <div><h3>Mocha</h3><p>Espresso, dark chocolate and steamed milk.</p></div>
+        <span class="price">$4.50</span>
+      </article>
+      <article class="menu-item" data-category="cold">
+        <div class="menu-icon">🧊</div>
+        <div><h3>Iced Latte</h3><p>Chilled espresso over milk and ice.</p></div>
+        <span class="price">$4.00</span>
+      </article>
+      <article class="menu-item" data-category="cold">
+        <div class="menu-icon">🥶</div>
+        <div><h3>Cold Brew</h3><p>Steeped 18 hours for a smooth finish.</p></div>
+        <span class="price">$4.30</span>
+      </article>
+      <article class="menu-item" data-category="bites">
+        <div class="menu-icon">🥐</div>
+        <div><h3>Butter Croissant</h3><p>Flaky, golden and baked this morning.</p></div>
+        <span class="price">$3.20</span>
+      </article>
+      <article class="menu-item" data-category="bites">
+        <div class="menu-icon">🍰</div>
+        <div><h3>Chocolate Cake</h3><p>A generous slice of rich, moist cake.</p></div>
+        <span class="price">$4.80</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- SPECIAL BANNER -->
+  <section class="special">
+    <div class="special-inner reveal">
+      <p class="eyebrow">Today's special</p>
+      <h2>Buy any coffee, get a pastry half price</h2>
+      <p>Available every weekday from 7 AM to 11 AM.</p>
+      <a href="#contact" class="btn">Visit Us Today</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews section" id="reviews">
+    <div class="section-head reveal">
+      <p class="eyebrow dark">Testimonials</p>
+      <h2>What our guests say</h2>
+    </div>
+    <div class="review-grid">
+      <blockquote class="review reveal">
+        <p>"The best cappuccino in town, and the staff remember my order every time."</p>
+        <footer>Sara M. <span>★★★★★</span></footer>
+      </blockquote>
+      <blockquote class="review reveal">
+        <p>"Perfect spot to work. Great Wi-Fi, calm music and unbelievable croissants."</p>
+        <footer>Daniel K. <span>★★★★★</span></footer>
+      </blockquote>
+      <blockquote class="review reveal">
+        <p>"Cozy, friendly and the cold brew is something else. Our weekend ritual."</p>
+        <footer>Hana T. <span>★★★★★</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="contact-info reveal">
+      <p class="eyebrow dark">Find us</p>
+      <h2>Come say hello</h2>
+      <ul>
+        <li>📍 <span>123 Main Street, Your City</span></li>
+        <li>📞 <span>+251 900 000 000</span></li>
+        <li>✉️ <span>hello@brewandbean.com</span></li>
+      </ul>
+      <h3>Opening hours</h3>
+      <table class="hours">
+        <tr><td>Mon – Fri</td><td>7:00 AM – 9:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM – 10:00 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM – 6:00 PM</td></tr>
+      </table>
+    </div>
+
+    <form class="contact-form reveal" id="reserveForm">
+      <h3>Reserve a table</h3>
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="Email address" required />
+      <div class="row">
+        <input type="date" id="date" required />
+        <input type="time" id="time" required />
+      </div>
+      <select id="guests" required>
+        <option value="" disabled selected>Number of guests</option>
+        <option>1 guest</option><option>2 guests</option><option>3 guests</option>
+        <option>4 guests</option><option>5+ guests</option>
+      </select>
+      <button type="submit" class="btn">Book Now</button>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <a href="#home" class="logo">☕ Brew<span>&</span>Bean</a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <p class="copy">© <span id="year"></span> Brew & Bean Coffee House. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="home.js"></script>
+</body>
+</html>
